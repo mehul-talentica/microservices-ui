@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <!-- Content here -->
+        <h1>Create User</h1>
+        <hr>
+        <form id="create-user-form" onsubmit="saveUser(event)">
+            <div class="form-group">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" name="firstName" class="form-control" id="inputFirstName" placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" name="lastName" class="form-control" id="inputLastName" placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <select name="gender" class="form-control" id="Gender">
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="NONE">NONE</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script>
+        var saveUser = function(event){
+            event.preventDefault();
+            event.stopPropagation();
+            var form = $("#create-user-form").serialize();
+            $.ajax({
+                method: "POST",
+                url: "/users/save",
+                data: form,
+                crossDomain: true,
+                success : function( msg ) {
+                    alert( "Data Saved: " + msg );
+                    window.location.href = "/users";
+                },
+                error : function( jqXHR, textStatus ) {
+                    alert( "Request failed: " + textStatus );
+                }
+            });
+            return false;
+        }
+    </script>
+</body>

@@ -1,0 +1,356 @@
+/* Global Style */
+body {
+    font-family: 'Lato', sans-serif !important;
+    background-color: #f9f9f9 !important;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 0px !important;
+}
+
+/* Nav */
+
+.inline-nav {
+     display: inline-block;
+     margin: 0 1.5rem;
+ }
+
+.inline-nav a {
+    color: #495057;
+}
+
+.inline-nav a:visited {
+    color: #495057;
+}
+
+img.currency-flag {
+    width: 20px;
+    height: 15px;
+    vertical-align: middle !important;
+}
+
+/* Progress Bar */
+.progress-wrapper {
+    padding: 30px 0px;
+}
+
+.progress-bar-wrapper {
+    padding: 20px 0px;
+}
+
+.progress-title {
+    text-align: center;
+}
+
+.progress-title.faded {
+    color: grey;
+}
+
+.progress-link {
+    color: black;
+}
+
+.progress-link:hover {
+    color: #1c557a;
+    text-decoration: none;
+}
+
+#preferencesBtn {
+    display: none;
+}
+
+/* Shopping Cart */
+.product-info {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Address Forms */
+.billing {
+    background-color: white;
+}
+
+.address-form {
+    padding: 20px 20px;
+}
+
+.form-header {
+    padding: 20px 0px;
+}
+
+/* Credit Card Forms */
+.credit-card-form {
+    padding: 20px 20px 20px 20px;
+}
+
+.credit-card-logos {
+    padding-top: 33px;
+}
+
+/* Total Box */
+.total-box {
+    background-color: #ffffff;
+    padding: 40px 40px;
+}
+
+.total-title {
+    padding-bottom: 10px;
+    border-bottom: 1px #cecece solid;
+}
+
+.total-row {
+    margin: 20px 0px;
+}
+
+.total-right-col {
+    text-align: right;
+}
+
+/* Confirmation Page */
+.card-title {
+    padding-bottom: 10px;
+    border-bottom: 1px #cecece solid;
+}
+
+.order-summary {
+    font-size: 18px;
+    border: 1px #cecece solid;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    background-color: white;
+}
+
+.order-card {
+    margin-bottom: 20px;
+}
+
+/* Log In Page */
+.header-logo {
+    position: relative;
+}
+
+.header-logo img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.error-field{
+    border: 2px red solid!important;
+    background-color: rgba(243, 100, 100, 0.2)!important;
+}
+
+#emailErrorField {
+    color: red;
+    text-align: center;
+}
+
+@keyframes shake-field {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+    10%,50%,90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    30%,70% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    animation: shake-field ease-in-out 500ms;
+    -webkit-animation: shake-field ease-in-out 500ms;
+}
+
+/* Full Screen Form */
+.full-screen {
+    margin: 100px auto 50px auto;
+    padding: 35px;
+}
+
+.full-screen-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.full-screen-form-title {
+    font-size: 1.75rem;
+    margin: 0 .5rem 2rem .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    text-align: center;
+}
+
+.full-screen-form-caption {
+    margin: 0 .25rem 2rem .25rem;
+    font-color: #323232;
+}
+
+.full-screen-form-control {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #495057;
+    background-color: #f9f9f9;
+    background-image: none;
+    background-clip: padding-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-color: #9f9f9f;
+    border-radius: 0;
+    transition: border-color ease-in-out .15s
+}
+
+.full-screen-form-control:focus {
+    outline: none;
+    border-color: #000000;
+    border-radius: 0;
+    transition: border-color ease-in-out .5s
+}
+
+
+.btn-full-screen-form {
+    background-color: #ffffff;
+    border: 1px #000000 solid !important;
+    margin-bottom: 24px !important;
+}
+
+.btn-full-screen-form:hover {
+    background-color: #efefef;
+    border: 1px #000000 solid !important;
+}
+
+/* Opt In Form */
+
+.opt-in-form {
+    background-color: white;
+    padding: 50px;
+}
+
+.opt-in-field {
+    position: relative;
+    margin-bottom: 24px !important;
+    height: 50px;
+}
+
+.opt-in-field input {
+    text-indent: 40px;
+    border: 1px black solid;
+}
+
+.opt-in-field .fa-envelope-o {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    font-size: 24px
+}
+
+.opt-in-field .fa-mobile {
+    position: absolute;
+    top: 9px;
+    left: 18px;
+    font-size: 30px;
+
+}
+
+.opt-in-field .full-screen-form-control {
+    padding: .5rem 2.5rem;
+}
+/* Log in form */
+
+.hr-wrapper {
+    padding: 15px;
+    text-align: center;
+}
+
+.text-hr {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #eee;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.text-in-hr {
+    line-height: 1.2;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    padding: 0 .5em;
+    background: #f9f9f9;
+    font-size: 1.2em;
+}
+
+/* Success */
+
+.thank-you-panel {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.thank-you-panel-inner {
+    padding: 60px 50px 0px 50px;
+}
+
+.thank-you-order-info {
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+
+.thank-you-order-info-bold {
+    font-weight: bold;
+}
+
+.opt-in-message {
+    position: absolute;
+    right: 0;
+}
+
+.relative-button {
+    margin-left: 5px;
+    position: relative;
+}
+
+/* Preferences */
+
+.preferences {
+    padding: 35px;
+}
+
+.pref-panel {
+    padding: 35px;
+    background-color: white;
+}
+
+/* Images */
+.image-product {
+    width: 100px;
+    height: 100px;
+}
+
+.hr-text{
+    height: 13px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.hr-text > span{
+    font-size: 16px;
+    background-color: #FFFFFF;
+    padding: 0 10px;
+}
